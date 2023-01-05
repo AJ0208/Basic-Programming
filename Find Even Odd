@@ -1,0 +1,35 @@
+/*
+ * Even Number -- Any number that can be exactly divided by 2
+ * 24%2 = 0
+ * 
+ * Odd numbers  -- numbers that are not divisible by 2
+ * 25%2 = 1
+ * 
+ */
+
+
+
+
+public class EvenOddNum {
+
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);      // to take input from user we used scanner class
+		System.out.println("Enter any number to check even or odd ?");       // taking input and for display
+		int number = sc.nextInt();      // taking input as integer in number variable
+		
+		sc.close();
+		
+		int org_number = number;   // assigning number to org_number variable
+		
+		if (number % 2 == 0) // checking the condition if number is divisible by 2 or not
+		{
+			System.out.println("The number" + " " +  org_number + " " + " is even");  // if yes
+		}
+		else
+		{
+			System.out.println("The number" + " " +  org_number + " " + " is odd"); // if No
+		}
+	}
+
+}
