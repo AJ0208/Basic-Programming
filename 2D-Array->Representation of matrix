@@ -1,0 +1,46 @@
+// Basic-Programming
+
+import java.util.Scanner;
+
+public class MatrixRepresent
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows & columns : ");
+		
+		int rows =  sc.nextInt();    // for taking user input
+		int cols = sc.nextInt();
+		
+		int [][] firstMatrix = new int [rows][cols];    // declare array of row by column
+		
+		
+		// input
+		// rows
+	    System.out.println("enter the row by column matrix:");
+	    
+		for(int i=0; i<rows ; i++) // it will control rows --
+		{
+			for(int j=0 ; j<cols ; j++) //  it will control columns -- 
+			{
+				firstMatrix [i][j] = sc.nextInt();   // taking input for matrix & store it
+			}
+		}
+		
+     	
+		
+	    System.out.println("Represent the row by column matrix:");
+		for(int i=0; i<rows ; i++)   //we went on a each row one by one
+		{
+			for(int j=0 ; j<cols ; j++) // then went for each column
+			{
+				System.out.print(firstMatrix [i][j] + " " );// got that value printed and give some space
+			}
+			System.out.println(); // agli row next lime me print hogi
+		}
+	}
+}
+
+
+
