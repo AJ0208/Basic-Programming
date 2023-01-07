@@ -1,0 +1,35 @@
+//Basic-Programming
+
+import java.util.Scanner;
+/*
+ *  numbers are less than zero  --- negative
+ * 
+ *  numbers are grater than zero  ---  positive
+ * 
+ * and zero 
+ * 
+ */
+public class ifelseIf_CheckNum {
+
+	public static void main(String[] args)
+	{
+		  Scanner sc = new Scanner(System.in);   // scanner class is use for taking input from user
+	      System.out.println("Enter any number: ");   // any statement u want to print
+	      int num = sc.nextInt();    // store the taken value in variable
+	      
+	      
+	      // executing if else if condition without curly braces if u want to print single statement after condition
+	      
+	      if(num < 0) 
+	         System.out.println("Enterd number is Negative"); // if any number less than zero 
+	      
+	      else if(num > 0)
+	    	  System.out.println("Enterd number is Positive");  // if any number greater than zero 
+	    	 
+	      
+	      else
+	    	  System.out.println("Enterd number is Zero");  // otherwise num == 0 , if not to specify condition it will work
+	     
+	}
+
+}
