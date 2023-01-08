@@ -1,0 +1,23 @@
+// Basic-Programming
+
+import java.util.Scanner;
+
+public class nNaruralNumber {
+
+	public static void main(String[] args) 
+	{
+		  Scanner sc = new Scanner(System.in);   // scanner class is use for taking input from user
+	      System.out.println("Enter any number: ");   // any statement u want to print
+	      int num = sc.nextInt();    // store the taken value in variable  // for take num = 5
+	      
+	      int sum = 0;
+	      
+	      for (int i = 1 ; i<=num ; i++)  // Dry run --> i = 1 , 1<=5 ; i++ , 2<=5 , 3<=5 , 4<=5 , 5<=5
+	      {
+	    	  sum = sum + i; //Dry run --> 0+1 = 1 , 1+2 = 3 , 3+3 = 6 , 6+4 = 10 , 10+5 = 15
+	      }
+		
+	      System.out.println("The sum of first " +num+ " "+ "natural number is : " + sum);
+	}
+
+}
