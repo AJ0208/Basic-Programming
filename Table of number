@@ -1,0 +1,38 @@
+// Basic-Programming
+
+
+import java.util.Scanner;
+
+/* for logic 
+ * table of 5 
+ * 5*1 = 5
+ * 5*2 = 10
+ * 5*3 = 15
+ * ...
+ * ...
+ * ...
+ * 5*10 = 10
+ * observe that number 5 is constant and the value of multiplied  number is changing
+ * 
+ */
+
+
+public class TableOfNumber 
+{
+	public static void main(String[] args) 
+	{
+		
+		  Scanner sc = new Scanner(System.in);         // scanner class is use for taking input from user
+	      System.out.println("Enter any number: ");   // any statement u want to print
+	      int num = sc.nextInt();                    // store the taken value in variable  // for take num = 5
+	      
+	     
+           for(int i = 1 ; i<= 10 ; i++)       // Dry run--> 1<=10 , 2<=10 , .... 10>=10
+           {
+        	   int result = num * i;         // 5*1=5 , 5*2 =10 , ... 5*10= 50
+        	   
+        	   System.out.println( num + "*" + i + "=" + result); // print result
+
+          }            
+    	}
+}
